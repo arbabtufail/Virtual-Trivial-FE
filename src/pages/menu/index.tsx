@@ -1,9 +1,9 @@
-const Menu = () => {
+const MenuPage = () => {
   return (
     <div>
-      <h1>Menu Page</h1>
+      <h1>Main Menu Page</h1>
     </div>
   );
 };
 
-export default Menu;
+export default MenuPage;

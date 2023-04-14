@@ -28,7 +28,6 @@ const Button: React.FC<IBUTTON> = ({
       disabled={isDisabled}
     >
       {text}
-      {/* {children} */}
     </button>
   );
 };

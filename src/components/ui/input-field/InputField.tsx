@@ -7,9 +7,7 @@ interface IINPUT {
   type?: string;
   placeHolder: string;
   maximumLength: number;
-  // handleChange: () => {};
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  // size:;
 }
 
 const InputField: React.FC<IINPUT> = ({
