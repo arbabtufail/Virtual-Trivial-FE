@@ -29,7 +29,7 @@
 }
 
 
-.login-form{
+.login-form {
     margin-top: -9px;
     display: flex;
     flex-direction: column;
@@ -37,18 +37,19 @@
     transform: matrix(0.9, -0.07, 0.07, 0.9, 0, 0);
 }
 
-.icon1{
-    position: absolute;
-    margin-left: -38px;
-    margin-top: 15px;
-}
-.icon2{
+.icon1 {
     position: absolute;
     margin-left: -38px;
     margin-top: 15px;
 }
 
-.tooltip Image[title]:hover::after{
+.icon2 {
+    position: absolute;
+    margin-left: -38px;
+    margin-top: 15px;
+}
+
+.tooltip Image[title]:hover::after {
     content: attr(title);
     padding: 5px;
     position: absolute;
@@ -58,14 +59,14 @@
     white-space: nowrap;
 }
 
-.InputField2{
+.InputField2 {
     margin-top: 8px;
 }
 
 
-.button-container{
-    transform:translateY(60px);
-    
+.button-container {
+    transform: translateY(60px);
+
 }
 
 .success-text {
@@ -77,19 +78,22 @@
     align-items: center;
     background: #29F937;
     color: #222027;
-    transform:matrix(0.9, -0.07, 0.07, 0.9, 0, 0) translateY(70px);
-   
-  }
-  .error-text {
+    transform: matrix(0.9, -0.07, 0.07, 0.9, 0, 0) translateY(70px);
+
+}
+
+.error-text {
 
     @extend .success-text;
     background: #FC5C65
-  }
-  .show-connection-status{
+}
+
+.show-connection-status {
     visibility: hidden;
-  
-  }
-.hide-connection-status{
+
+}
+
+.hide-connection-status {
     visibility: inherit;
 }
 
@@ -98,37 +102,131 @@
         width: 780px;
         height: 300px;
         transform: matrix(1, 0.07, -0.07, 1, 0, 0) translateY(-40px);
-      }
-      .text {
+    }
+
+    .text {
         margin-top: 170px;
     }
-    .InputField2{
+
+    .InputField2 {
         margin-bottom: 10px;
     }
-    .button-container{
-        transform:translateY(20px);
-        
+
+    .button-container {
+        transform: translateY(20px);
+
     }
-  }
+}
 
 @media only screen and (min-width: 1535px) and (max-width: 1540px) {
     .login-container {
         width: 750px;
         height: 290px;
         transform: matrix(1, 0.07, -0.07, 1, 0, 0) translateY(-40px);
-      }
-      .text {
+    }
+
+    .text {
         margin-top: 150px;
     }
-    .InputField2{
+
+    .InputField2 {
         margin-bottom: 10px;
     }
-    .button-container{
-        transform:translateY(20px);
-        
-    }
-    .hide-connection-status{
-        transform:matrix(0.9, -0.07, 0.07, 0.9, 0, 0) translateY(35px);
-      }
-  }
 
+    .button-container {
+        transform: translateY(20px);
+
+    }
+
+    .hide-connection-status {
+        transform: matrix(0.9, -0.07, 0.07, 0.9, 0, 0) translateY(35px);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .login-container {
+        width: 750px;
+        height: 290px;
+        transform: matrix(1, 0.07, -0.07, 1, 0, 0) translateY(-40px);
+    }
+
+    .text {
+        margin-top: 135px;
+    }
+
+    .button-container {
+        transform: translateY(40px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .login-container {
+        width: 95%;
+        height: 290px;
+        transform: matrix(1, 0.07, -0.07, 1, 0, 0) translateY(-40px);
+    }
+
+    .text {
+        margin-top: 135px;
+        font: normal normal normal 35/45px Bebas Neue;
+    }
+
+    .button-container {
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .text {
+        margin-top: 135px;
+        font: normal normal normal 35px Bebas Neue;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .text {
+        margin-top: 135px;
+        font: normal normal normal 26px Bebas Neue;
+    }
+
+    .success-text {
+        width: 80%;
+        padding: 15px;
+        font: 24px Bebas Neue;
+
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .text {
+        font: normal normal normal 23px Bebas Neue;
+    }
+
+}
+
+@media only screen and (max-width: 432px) {
+    .text {
+
+        font: normal normal normal 26px Bebas Neue;
+    }
+
+    .button-container {
+        transform: translateY(19px);
+
+    }
+    .success-text {
+        font: 23px Bebas Neue;
+    } 
+
+   
+}
+
+@media only screen and (max-width: 320px) {
+    .success-text {
+        font: 18px Bebas Neue;
+    } 
+}

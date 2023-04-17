@@ -1,19 +1,21 @@
 .default-button {
     width: 335px;
     height: 91px;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
-.test-connection-button{
+.test-connection-button {
     padding-left: 8.5%;
     background: #D4ABFC;
-    clip-path:polygon(100% 0, 20% 0, 0% 50%, 20% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 20% 0, 0% 50%, 20% 100%, 100% 100%);
     font: normal normal normal 40px/52px Bebas Neue;
     letter-spacing: 0px;
     color: #222027;
 }
+
 .login-button {
+    padding-right: 15px;
     margin-left: 15px;
     background: #F9CE29;
     clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
@@ -21,8 +23,8 @@
     letter-spacing: 0px;
     color: #222027;
 
-    &:disabled{
-        background: #B5B3C1 ;
+    &:disabled {
+        background: #B5B3C1;
     }
 }
 
@@ -30,18 +32,192 @@
     .default-button {
         width: 335px;
         height: 82px;
-        border:none;
+        border: none;
         cursor: pointer;
     }
-  }
+}
 
 @media only screen and (min-width: 1535px) and (max-width: 1540px) {
     .default-button {
         width: 335px;
         height: 75px;
-        border:none;
+        border: none;
         cursor: pointer;
     }
-  }
+}
 
+@media only screen and (max-width: 1000px) {
+    .default-button {
+        width: 335px;
+        height: 85px;
+        border: none;
+        cursor: pointer;
+    }
+}
 
+@media only screen and (max-width: 800px) {
+
+    .test-connection-button {
+        width: 300px;
+        height: 80px;
+        padding-right: 10px;
+        font: normal normal normal 35px Bebas Neue;
+    }
+
+    .login-button {
+        width: 300px;
+        height: 80px;
+        padding-left: 2.5%;
+        font: normal normal normal 35px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .test-connection-button {
+        width: 250px;
+        height: 70px;
+        padding-left: 8.5%;
+        font: normal normal normal 30px/20px Bebas Neue;
+    }
+
+    .login-button {
+
+        width: 250px;
+        height: 70px;
+        padding-left: 2.5%;
+        font: normal normal normal 30px/22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+    .test-connection-button {
+        width: 250px;
+        height: 70px;
+        padding-left: 8.5%;
+        font: normal normal normal 30px/20px Bebas Neue;
+    }
+
+    .login-button {
+        width: 250px;
+        height: 70px;
+        padding-left: 2.5%;
+        font: normal normal normal 30px/22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .test-connection-button {
+        width: 205px;
+        height: 60px;
+        padding-left: 8.5%;
+        font: normal normal normal 25px/20px Bebas Neue;
+    }
+
+    .login-button {
+        width: 205px;
+        height: 60px;
+        padding-left: 2.5%;
+        font: normal normal normal 25px/22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 432px) {
+
+    .test-connection-button {
+        padding-left: -5%;
+        width: 180px;
+        height: 55px;
+        padding-right: 0px;
+        font: normal normal normal 24px/20px Bebas Neue;
+    }
+
+    .login-button {
+        width: 180px;
+        height: 55px;
+        padding-left: 2.5%;
+        font: normal normal normal 24px/22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .test-connection-button {
+        padding-left: -5%;
+        width: 170px;
+        height: 55px;
+        padding-left: 8.5%;
+        font: normal normal normal 22px/20px Bebas Neue;
+    }
+
+    .login-button {
+        width: 170px;
+        height: 55px;
+        padding-left: 2.5%;
+        font: normal normal normal 24px/22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .test-connection-button {
+        width: 160px;
+        height: 55px;
+        padding-left: 8.5%;
+        font: normal normal normal 21px Bebas Neue;
+    }
+
+    .login-button {
+        width: 160px;
+        height: 55px;
+        padding-left: 2.5%;
+        margin-left: 8px;
+        font: normal normal normal 22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 340px) {
+
+    .test-connection-button {
+        margin-left: -5px;
+        width: 160px;
+        height: 55px;
+        padding-left: 8.5%;
+        font: normal normal normal 22px Bebas Neue;
+    }
+
+    .login-button {
+        width: 160px;
+        height: 55px;
+        padding-left: 2.5%;
+        margin-left: 5px;
+        font: normal normal normal 22px Bebas Neue;
+
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .test-connection-button {
+        width: 160px;
+        height: 55px;
+        padding-left: 8.5%;
+        font: normal normal normal 22px Bebas Neue;
+    }
+
+    .login-button {
+        width: 158px;
+        height: 55px;
+        padding-left: 2.5%;
+        font: normal normal normal 22px Bebas Neue;
+
+    }
+}

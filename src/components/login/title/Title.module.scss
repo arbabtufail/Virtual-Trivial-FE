@@ -28,3 +28,30 @@
     font: normal normal 300 100px Neon;
     }
 }
+
+@media only screen and (max-width: 1000px){
+    .title-text-container{
+        height: 120px;
+        font: normal normal 300 80px Neon;
+        }
+} 
+
+@media only screen and (max-width: 730px){
+    .title-text-container{
+        height: 10%px;
+        font: normal normal 300 4rem Neon;
+        }
+} 
+
+@media only screen and (max-width: 500px){
+    .title-text-container{
+        height: 10%px;
+        font: normal normal 300 3rem Neon;
+        }
+}
+@media only screen and (max-width: 350px){
+    .title-text-container{
+        height: 10%px;
+        font: normal normal 300 2.5rem Neon;
+        }
+}

@@ -1,7 +1,21 @@
-import axios from "axios";
+import axios, { InternalAxiosRequestConfig } from "axios";
+import {
+  successResponseHandler,
+  requestHandler,
+  errorResponseHandler,
+} from "./interceptors";
 
-const API = axios.create({
-  baseURL: "http://localhost:5000/api",
-});
+const getAxiosInstance = () => {
+  const instance = axios.create({
+    baseURL: "http://localhost:5000/api",
+  });
 
-export default API;
+  instance.interceptors.request.use(requestHandler);
+  instance.interceptors.response.use(
+    successResponseHandler,
+    errorResponseHandler
+  );
+  return instance;
+};
+
+export default getAxiosInstance();

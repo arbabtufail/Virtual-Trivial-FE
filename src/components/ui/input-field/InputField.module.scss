@@ -1,7 +1,7 @@
 .input-field {
     width: 525px;
     height: 60px;
-    background: #FFFFFF ;
+    background: #FFFFFF;
     border-radius: 10px;
     padding-left: 4%;
     border: none;
@@ -16,6 +16,67 @@
 
     &:focus {
         outline: none !important;
-        box-shadow: 0 0 15px #140663;
+        box-shadow: 0 0 10px #140663;
+        // outline:2px solid rgb(84, 84, 244);
+        
     }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .input-field {
+        width: 100%;
+        letter-spacing: 4px;
+        font: normal normal normal 45px/59px Bebas Neue;
+
+        &::placeholder {
+            color: #B5B3C1;
+            font: normal normal normal 33px/42px Bebas Neue Pro;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+    .input-field {
+
+        width: 90%;
+        letter-spacing: 3.5px;
+
+        &::placeholder {
+            font: normal normal normal 30px/42px Bebas Neue Pro;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 432px) {
+
+    .input-field {
+        width: 80%;
+        letter-spacing: 1.5px;
+        font: normal normal normal 45px/59px Bebas Neue;
+
+        &::placeholder {
+            font: normal normal normal 27.5px/42px Bebas Neue Pro;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .input-field {
+        letter-spacing: 0.5px;
+        // padding-bottom: 10px;
+
+        &::placeholder {
+            font: normal normal normal 25px/42px Bebas Neue Pro;
+        }
+
+    }
+
 }
